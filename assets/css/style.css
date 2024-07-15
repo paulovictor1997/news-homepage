@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Public+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: hsl(36, 100%, 99%);
+    --contentColor: hsl(233, 8%, 79%);
+    --contentColor2: hsl(236, 13%, 42%);
+    --hoverButton: hsl(240, 100%, 5%);
+    --hoverTitle: hsl(5, 85%, 63%);
+    --Mainhover: hsl(35, 77%, 62%);
+    --secondaryTitle: hsl(5, 85%, 63%);
+    --titleColor: hsl(240, 100%, 5%);
+}
