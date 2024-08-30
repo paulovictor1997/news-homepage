@@ -13,7 +13,153 @@
     --contentColor2: hsl(236, 13%, 42%);
     --hoverButton: hsl(240, 100%, 5%);
     --hoverTitle: hsl(5, 85%, 63%);
+    --link: hsl(5, 85%, 63%);
     --Mainhover: hsl(35, 77%, 62%);
     --secondaryTitle: hsl(5, 85%, 63%);
     --titleColor: hsl(240, 100%, 5%);
 }
+
+/*Classes*/
+.contentColor {
+    color: var(--contentColor2);
+    font-weight: 500;
+}
+
+.titleColor{
+    color: var(--titleColor);
+}
+
+/*Navbar*/
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px;
+    width: 100%;
+}
+
+.nav-links-desktop{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links-desktop li {
+    padding: 0 15px;
+}
+
+.nav-links-desktop a,
+.nav-links-mobile a {
+  color: var(--contentColor2);
+  text-decoration: none;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+  padding: 5px;
+}
+
+.nav-links-desktop a:hover{
+    color: var(--Mainhover);
+}
+
+.mobile-menu{
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--whiter);
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+    z-index: 5;
+}
+
+.nav-links-mobile{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+    width: 80%;
+    list-style: none;
+    padding: 0;
+    background-color: var(--navbarColor);
+}
+
+.hamburger,
+.close {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.close {
+  margin-top: 20px;
+  margin-right: 20px;
+  display: block;
+  align-self: end;
+}
+
+.flex {
+  display: flex;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+}
+
+.container .area{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.container .area-2{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+}
+
+.container .area-2 .titles{
+   width: 350px;
+}
+
+.container .area-2 .titles h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.container .area-2 .description{
+   width: 350px;
+   line-height: 1.5rem;
+}
+
+.container .area-2 .description .link{
+   padding: 5px;
+   margin-top: 3%;
+}
+
+.container .area-2 .description .link a{
+    text-decoration: none;
+    background-color: var(--link);
+    color: var(--titleColor);
+    font-weight: bold;
+    padding:10px;
+    transition: 0.5s all;
+}
+
+.container .area-2 .description .link a:hover{
+   background-color: var(--hoverButton);
+   color: var(--white);
+}
+
+
+
+
