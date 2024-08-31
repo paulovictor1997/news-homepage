@@ -12,10 +12,12 @@
     --contentColor: hsl(233, 8%, 79%);
     --contentColor2: hsl(236, 13%, 42%);
     --hoverButton: hsl(240, 100%, 5%);
+    --new-area:hsl(240, 100%, 5%);
     --hoverTitle: hsl(5, 85%, 63%);
     --link: hsl(5, 85%, 63%);
     --Mainhover: hsl(35, 77%, 62%);
     --secondaryTitle: hsl(5, 85%, 63%);
+    --thirtyTitle: hsl(35, 77%, 62%);
     --titleColor: hsl(240, 100%, 5%);
 }
 
@@ -160,6 +162,77 @@
    color: var(--white);
 }
 
+/*New area*/
+
+.new-area{
+    padding: 25px;
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--new-area);
+    margin-top: 1%;
+}
+
+.new-area .desc-new{
+   color: var(--contentColor);
+   margin-top: 3%;
+  
+}
+
+.new-area .line{
+    width: 100%;
+    border: 1px solid var(--contentColor2);
+    margin-top: 5%;
+}
 
 
+.new-area .new-title{
+    color: var(--thirtyTitle);
+    font-size: 30px;
+    
+}
 
+.new-area h2{
+    color: var(--white);
+    margin-top: 10%;
+}
+
+
+/*Ranking*/
+.ranking-area{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ranking-area .rank{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.ranking-area .rank .rank-section{
+    padding: 10px;
+    width: 300px;
+}
+
+.ranking-area .rank .rank-section h2{
+    color: var(--secondaryTitle);
+    font-size: 30px;
+}
+
+.ranking-area .rank .rank-section h4{
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+.ranking-area .rank .rank-section p{
+    margin-top: 3%;
+}
+
+
+.ranking-area .rank .img-rank img{
+    width: 100px;
+}
