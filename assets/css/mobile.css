@@ -3,3 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@media (max-width:1200px) {
+    .nav-links-desktop{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+    
+    .hidenButton{
+        display: none;
+    }
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .area .img {
+       margin: auto;
+    }
+
+    .container .area-2{
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .container .area-2 .titles{
+        width: 250px;
+    }
+
+    .container .area-2 .titles h1{
+        font-size: 40px;
+    }
+
+    .new-area{ 
+        width: 310px;
+    }
+
+    .ranking-area{
+       flex-direction: column;
+    }
+
+    .ranking-area .rank .rank-section{
+        padding: 10px;
+        width: 200px;
+    }
+    
+    
+}
